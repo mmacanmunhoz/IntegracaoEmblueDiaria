@@ -1,0 +1,12 @@
+[Unit]
+Description=Integração da Mundo Verde - Microvix para Emblue. Roda diariamente as 6am
+
+[Service]
+User=root
+WorkingDirectory=/www/mundo-verde-emblue/mundo-verde-emblue/IntegracaoEmblueDiaria
+ExecStart=/venv/bin/python /main.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

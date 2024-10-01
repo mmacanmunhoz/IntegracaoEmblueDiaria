@@ -1,0 +1,5 @@
+_logs/**
+**/__pycache__
+**/clientes.json
+_credenciais
+venv/**
